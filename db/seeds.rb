@@ -13,6 +13,10 @@ Droplet.create!(drink:'3', description:'water consumed during yoga')
 Droplet.create!(drink:'5', description:'meant to say 5 instead of 50') 
 Droplet.create!(drink:'25', description:'had a lot of water today!')
 
-
-
+#Weekly view
+Weekly.create!(day: 'Monday', droplets: '5')
+Weekly.create!(day: 'Tuesday', droplets:'15')
+Weekly.create!(day: 'Wednesday', droplets: '25')
+Weekly.create!(day: 'Saturday', droplets: '10')
+Weekly.create!(day: 'Sunday', droplets: '12')
 

@@ -1,4 +1,4 @@
-%h1 Edit the weekly droplets
+%h1 Editing weekly
 
 = render 'form'
 
