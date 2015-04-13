@@ -1,5 +1,4 @@
-%h1 New droplet
-%p Great Job!! You're on your way to a healthy body!
+%h1 Editing droplet
 
 = render 'form'
 
