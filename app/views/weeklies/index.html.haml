@@ -1,0 +1,27 @@
+%h1 Listing weeklies
+
+%table
+  %thead
+    %tr
+      %th Day
+      %th String
+      %th Droplets
+      %th Integer
+      %th
+      %th
+      %th
+
+  %tbody
+    - @weeklies.each do |weekly|
+      %tr
+        %td= weekly.day
+        %td= weekly.string
+        %td= weekly.droplets
+        %td= weekly.integer
+        %td= link_to 'Show', weekly
+        %td= link_to 'Edit', edit_weekly_path(weekly)
+        %td= link_to 'Destroy', weekly, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Weekly', new_weekly_path

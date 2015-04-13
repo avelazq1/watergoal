@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Day:
+  = @weekly.day
+%p
+  %b String:
+  = @weekly.string
+%p
+  %b Droplets:
+  = @weekly.droplets
+%p
+  %b Integer:
+  = @weekly.integer
+
+= link_to 'Edit', edit_weekly_path(@weekly)
+\|
+= link_to 'Back', weeklies_path
