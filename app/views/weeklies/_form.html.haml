@@ -1,9 +1,9 @@
-= form_for @week do |f|
-  - if @week.errors.any?
+= form_for @weekly do |f|
+  - if @weekly.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@week.errors.count, "error")} prohibited this week from being saved:"
+      %h2= "#{pluralize(@weekly.errors.count, "error")} prohibited this weekly from being saved:"
       %ul
-        - @week.errors.full_messages.each do |msg|
+        - @weekly.errors.full_messages.each do |msg|
           %li= msg
 
   .field

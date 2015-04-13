@@ -1,6 +1,6 @@
-class CreateWeeks < ActiveRecord::Migration
+class CreateWeeklies < ActiveRecord::Migration
   def change
-    create_table :weeks do |t|
+    create_table :weeklies do |t|
       t.string :day
       t.string :string
       t.string :droplets

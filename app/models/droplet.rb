@@ -1,3 +1,3 @@
 class Droplet < ActiveRecord::Base
-	belongs_to :week
+	belongs_to :weekly
 end
