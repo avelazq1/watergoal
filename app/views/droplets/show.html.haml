@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Drink:
+  = @droplet.drink
+%p
+  %b Description:
+  = @droplet.description
+
+= link_to 'Edit', edit_droplet_path(@droplet)
+\|
+= link_to 'Back', droplets_path

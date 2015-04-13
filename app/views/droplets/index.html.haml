@@ -1,0 +1,23 @@
+%h1 Listing droplets
+
+%table
+  %thead
+    %tr
+      %th Drink
+      %th Description
+      %th
+      %th
+      %th
+
+  %tbody
+    - @droplets.each do |droplet|
+      %tr
+        %td= droplet.drink
+        %td= droplet.description
+        %td= link_to 'Show', droplet
+        %td= link_to 'Edit', edit_droplet_path(droplet)
+        %td= link_to 'Destroy', droplet, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Droplet', new_droplet_path
