@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Watergoal</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+!!!
+%html
+  %head
+    %title Watergoal
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+%p Watergoal is an app for anyone who is interested in getting hydrated. Water is an important staple of a healthy lifestyle and many of us miss out on the great benefits. With Watergoal you can set your desired number of glasses of water to drink within a given day and keep track of your progress on your quest to hydration!
+    = yield
 
-<%= yield %>
-
-</body>
-</html>
