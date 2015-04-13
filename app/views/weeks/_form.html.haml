@@ -1,0 +1,22 @@
+= form_for @week do |f|
+  - if @week.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@week.errors.count, "error")} prohibited this week from being saved:"
+      %ul
+        - @week.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :day
+    = f.text_field :day
+  .field
+    = f.label :string
+    = f.text_field :string
+  .field
+    = f.label :droplets
+    = f.text_field :droplets
+  .field
+    = f.label :integer
+    = f.text_field :integer
+  .actions
+    = f.submit 'Save'
